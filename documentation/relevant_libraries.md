@@ -1,0 +1,309 @@
+# Relevant Libraries
+
+## Data Collection
+All libraries were collected via manual collection. This collection was done
+primarily via the offical release notes on the appropriate library's github
+(linked below) or official documentation and supported via searching online
+forums and blogs, notably stack overflow and github issues.
+
+All data sources have been linked.
+
+## List of Relevant Libraries
+- [Tensorflow](https://github.com/tensorflow/tensorflow/blob/master/RELEASE.md)
+    - 2.4.0 - Nov 2 2020
+        - tensorflow::tstring/TF_TStrings
+        - tf.data.experimental.service.DispatchServer
+        - tf.data.experimental.service.WorkerServer
+        - tf.distribute.Strategy.experimental_make_numpy_dataset
+        - experimental_hints
+        - tf.keras.mixed_precision.experimental
+    - 2.3.0 - Jul 27 2020
+        - foldr
+        - foldl
+        - import_graph_def
+        - map_fn
+        - scan
+        - while_loop
+        - tf.distribute.experimental.TPUStrategy (renamed to tf.distribute.TPUStrategy)
+        - tf.keras
+    - 2.2.0 - May 6 2020
+        - XLA_CPU
+        - XLA_GPU
+    - 2.1.0 - Jan 8 2020
+        - Operation.traceback_with_start_lines
+        - tf.config.experimentalVirtualDeviceConfiguration
+        - tf.config.experimental_list_devices
+    - 2.0.0 - Sep 30 2019
+        - tf.contrib
+        - tf.contrib.timeseries
+        - Estimator.export_savedmodel
+        - tf.feature_column.input_layer
+        - tf.keras.experimental.export_saved_model
+        - tf.keras.experimental.function
+        - lite.OpHint
+        - lite.experimental
+        - lite.constant
+        - tf.string_split
+        - UnifiedGRU
+        - CUDNN_INSTALL_PATH
+        - TENSORRT_INSTALL_PATH
+        - NCCL_INSTALL_PATH
+        - NCCL_HDR_PATH
+    - [1.14](https://github.com/keras-team/keras/issues/13004)
+        - tf.placeholder
+        - tf.get_default_graph
+        - tf.random_uniform
+        - tf.nn.fused_batch_norm
+        - tf.nn.max_pool
+        - tf.image.resize_nearest_neighbor
+        - add_dispatch_support..wrapper
+        - crop_and_resize_v1
+- [Keras](https://github.com/keras-team/keras/releases)
+    - 2.4.0 - Jun 17 2020
+        - depreciated keras itself
+    - 2.3.0 - Sept 17 2019
+        - batch_size
+        - write_grads
+        - embeddings_freq
+        - embeddings_layer_names
+        - embeddings_metadata
+        - embeddings_data
+    - 2.2.0 - Jun 6 2018
+        - Merge
+    - 2.0.0 - May 4 2017
+        - objectives
+        - matthews_correlation
+        - precision
+        - recall
+        - fbeta_score
+        - fmeasure
+        - MaxoutDense
+        - Highway
+        - TimedistributedDense
+        - dim_ordering
+        - AtrousConvolution
+        - Deconvolution2D
+        - set_image_ordering
+        - image_ordering
+        - W_regularizer
+        - b_regularizer
+        - dropout_W
+        - dropout_U
+        - consume_less
+        - samples_per_epoch
+        - nb_val_samples
+        - val_samples
+- [Tesseract](https://github.com/tesseract-ocr/tesseract/releases)
+    - [other changes](https://github.com/tesseract-ocr/tessdoc/blob/master/Planning.md#features-from-30x-which-are-missing-for-lstm)
+    - 4.1.1 - Dec 26 2019
+        - cppan
+    - 4.1.0 - Jul 7 2019
+        - OpenMP
+    - 4.0 - Oct 29 2018
+        - GenericVector::dot_product
+        - GenericVector::compact
+        - classify/cutoffs.h
+        - SavePixForCrash
+        - IntSimMatrix
+    - 3.0 - Oct 21 2011
+        - ETEXT_STRUCT
+        - PBLOB
+        - AccuracyVSpeed
+    - tess4j - 2015
+- [PyTorch](https://github.com/pytorch/pytorch/releases)
+    - 1.7.0 - Oct 26 2020
+        - torch.fft function
+        - torch.norm
+        - torch.split
+        - torch.chunk
+        - nn.BCELoss
+        - torch.functional.norm
+        - ProcessGroup
+    - 1.6.0 - Jul 28 2020
+        - torch.div
+        - torch.addcdiv
+        - recompute_scale_factor
+        - torch.save
+    - 1.5.0 - Apr 21 2020
+        - torch.autograd.Function
+        - torch::nn::BatchNorm
+        - torch::nn::FeatureDropout
+        - torch::nn::modules_ordered_dict
+        - torch::nn::init::Nonlinearity
+        - torch::nn::init::FanMode
+        - torch.div
+        - torch.addcdiv
+        - torch.full
+        - torch.nn.modules.conv._ConvTransposeMixin
+        - Tensor.type()
+    - 1.4.0 - Jan 15 2020
+        - torch::nn::modules_ordered_dict
+        - python 2
+        - torch.optim: Scheduler.step
+        - c++ 11
+        - Tensor::is_variable
+        - torch::nn::modules_ordered_dict
+        - torch.jit.quantized
+    - 1.3.0 - Oct 10 2019
+        - torch.gels:
+    - 1.2.0 - Aug 8 2019
+        - torch.uint8
+        - autograd.Function
+        - torch.gels
+    - 1.1.0 - Apr 30 2019
+        - torch.potrs
+        - torch.pstrf
+        - torch.potri
+        - torch.btrifact_with_info
+        - torch.btrifact
+        - torch.gesv
+        - torch.trtrs
+        - torch.btriunpack
+        - torch.btrisolve
+        - IntList
+        - variable_tensor_functions
+    - 1.0.0 - Dec 7 2018
+        - torch.utils.trainer
+        - torch/torch.h
+        - torch::set_requires_grad
+        - torch::requires_grad
+        - torch::getVariableType
+        - torch.nn.parallel.DistributedDataParallel
+    - 0.4.0 - Apr 24 2018
+        - volatile
+        - Tensor.resize
+        - Tensor.resize_as
+        - torch.nn.init.*
+    - 0.3.0 - Dec 4 2017
+        - Variable.reinforce
+    - 0.2.0 - Aug 28 2017
+        - masked_copy_
+- Theano [releases](https://github.com/Theano/Theano/releases) [history](https://github.com/Theano/Theano/blob/master/HISTORY.txt)
+    - 0.10.0 - Sept 7 2017
+        - conv2d
+        - nose-parameterized
+        - cublas.lib
+        - cuda.enabled
+        - enable_initial_driver_test
+        - gpuarray.sync
+        - home
+        - lib.cnmem
+        - nvcc.*
+        - pycuda.init
+        - Changed ``grad()`` method to ``L_op()``
+        - softmax
+        - logsoftmax
+    - 0.9.0 - Mar 20 2017
+        - nose-parameterized
+        - cublas.lib
+        - cuda.enabled
+        - enable_initial_driver_test
+        - gpuarray.sync
+        - home
+        - lib.cnmem
+        - nvcc.*
+        - pycuda.init
+        - conv2d
+        - conv3d
+        - softmax
+        - logsoftmax
+    - 0.8.0 - Mar 21 2016
+        - Param
+    - 0.6.0 - Feb 14 2013
+        - ProfileMode
+        - theano.misc.strutil.renderString
+    - 0.6rc1 - Oct 1 2012
+        - Module
+        - Env
+    - 0.5 - Feb 23 2012
+        - sharedvar.value
+        - FAST_RUN_NOGC
+        - STABILIZE
+        - tensor.shared
+    - 0.4.1 - Aug 12 2011
+        - FAST_RUN_NOGC
+        - STABILIZE
+        - return_steps
+        - integer division from / to //
+    - 0.4.0 13 Jun 2011
+        - tag.shape
+        - CudaNdarray_new_null
+        - sandbox/compile
+        - incsubtensor
+        - setsubtensor
+- caffe
+    - cold-brew - Aug 8 2014
+        - train_net.bin
+        - finetune_net.bin
+        - test_net.bin
+        - device_query.bin
+        - net_speed_benchmark.bin
+    - kona-snow - May 20 2014
+        - V0
+    - polyculture - Mar 19 2014
+        - padding layers
+    - caffe2 - May 02 2018
+        - entire library is deprecated
+        - [adopted to pytorch](https://caffe2.ai/blog/2018/05/02/Caffe2_PyTorch_1_0.html)
+- [pyspark](https://spark.apache.org/docs/latest/api/java/deprecated-list.html)
+    - 3.1.0 - Sept 8 2020
+        - org.apache.spark.sql.SQLImplicits.newBooleanSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newByteSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newDoubleSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newFloatSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newIntSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newLongSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newProductSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newShortSeqEncoder
+        - org.apache.spark.sql.SQLImplicits.newStringSeqEncoder
+        - org.apache.spark.sql.UDFRegistration.register
+    - 3.0.0 - Jun 18 2020
+        - org.apache.spark.sql.expressions.javalang.typed
+        - org.apache.spark.sql.expressions.scalalang.typed
+        - org.apache.spark.sql.expressions.UserDefinedAggregateFunction
+            - UserDefinedAggregateFunction
+        - org.apache.spark.ml.clustering.BisectingKMeansModel.computeCost
+        - org.apache.spark.ml.feature.StringIndexerModel.labels()
+        - org.apache.spark.SparkConf.setAll(Traversable<Tuple2<String, String>>)
+        - org.apache.spark.sql.functions.udf(Object, DataType)
+    - 2.2.0 - July 11 2017
+        - org.apache.spark.sql.SQLContext.createExternalTable
+        - org.apache.spark.sql.DataFrameReader.json
+    - 2.1.0 - Dec 28 2016
+        - org.apache.spark.sql.functions.approxCountDistinct
+        - org.apache.spark.sql.functions.toDegrees
+        - org.apache.spark.sql.functions.toRadians
+    - 2.0.0 - July 26 2016
+        - org.apache.spark.sql.hive.HiveContext
+            - HiveContext
+        - org.apache.spark.sql.SQLContext
+        - org.apache.spark.sql.SQLContext.clearActive
+        - org.apache.spark.sql.Dataset.explode
+        - org.apache.spark.sql.SQLContext.getOrCreate
+        - org.apache.spark.sql.functions.monotonicallyIncreasingId()
+        - org.apache.spark.sql.Dataset.registerTempTable(String)
+        - org.apache.spark.sql.SQLContext.setActive(SQLContext)
+    - 1.4.0 - Jun 11 2015
+        - org.apache.spark.sql.SQLContext.jdbc
+        - org.apache.spark.sql.SQLContext.jsonFile
+        - org.apache.spark.sql.SQLContext.jsonRDD
+        - org.apache.spark.sql.SQLContext.load(String)
+        - org.apache.spark.sql.SQLContext.parquetFile
+    - 1.3.0 - Mar 13 2015
+        - org.apache.spark.sql.SQLContext.applySchema
+- [pymc](https://github.com/pymc-devs/pymc3/releases)
+    - 3.9.0 - Jun 16 2020
+        - sample_ppc
+        - sample_ppc_w
+        - sd
+        - Text
+        - SQLite
+        - save_trace
+        - load_trace
+    - 3.7 - May 29 2019
+        - nuts_kwargs
+        - step_kwargs
+        - live_plot
+        - SGFS
+        - CSG
+        - approx_hessian
