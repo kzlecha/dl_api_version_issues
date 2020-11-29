@@ -23,7 +23,7 @@ def explicit_mention(df):
         num_keywords: the split between reference found in question and answer
     ---
     Filter Used
-    Used tested filter from "An Empirical Study of Obsolete Answers on Stack Overflow
+    Used tested filter from "An Empirical Study of Obsolete Answers on Stack Overflow"
 
     Known false negatives:
         - nightly builds
