@@ -129,9 +129,14 @@ dmypy.json
 .pyre/
 
 # VSCODE
+<<<<<<< HEAD
 .vscode/
 .vscode
 venv/
 
 # don't add the data
 data/
+=======
+vscode/
+vscode
+>>>>>>> 2958a6fbb562217c0f5c6388386f2e01d6cc8b8f
