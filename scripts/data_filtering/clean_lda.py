@@ -84,5 +84,5 @@ for filename in files:
     # keep only the top k
     df['tokenized'] = df['tokenized'].apply(keep_top_k_words)
 
-    df.read_pickle("data/filtered/tokenized/"+filename+"_token.pkl", protocol=4)
+    df.to_pickle("data/filtered/tokenized/"+filename+"_token.pkl", protocol=4)
 
