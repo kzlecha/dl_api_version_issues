@@ -15,6 +15,14 @@ We manually select X samples of the collected data to investigate whether the us
 Do the users discuss the backward compatibility issues?
 [REF: An Empirical Analysis of Backward Compatibility in Machine Learning Systems]
 
+## Running the Code
+
+Note that no relevant data has been included here at the instructions of the supervising
+professor.
+
+All scripts can be run in a Python3 virtual environment. Be sure to install all
+required packages via: `pip install -r requirements.txt`.
+
 ## Methodology
 
 ### Libraries Studied
@@ -48,9 +56,19 @@ outlined in `documentation/relevant_libraries.md`.
 
 #### Deprecated Libraries
 
-Using the deprecated APIs found in the manual investigation, the questions were further
-filtered 
+Using the deprecated APIs found in the manual investigation, the questions were
+further filtered to select all references to a deprecated API after the release of
+the relevant deprecation.
 
 #### Explicit Reference to Deprecation
+
+This filter was inspired by the related work "An Empirical Study of Obsolete Answers on
+Stack Overflow". In this study, the following list of keywords were used to find
+obsolete answers (answers that have become out-dated due to deprecation) as pointed
+out by commentors.
+
+The keywords used: `"deprecate", "deprecation", "out of date", "outdated", "obsolete"`.
+
+Furthermore, only questions with answers were considered.
 
 ### Analysis
