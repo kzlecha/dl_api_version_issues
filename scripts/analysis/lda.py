@@ -19,7 +19,7 @@ for filename in files:
     filepath = "data/filtered/tokenized/"+filename+"_token.pkl" 
     df = read_pickle(filepath)
 
-    num_topics = 100
+    num_topics = 20
     chunksize = 300
     dictionary = Dictionary(df['tokenized'])
     corpus = [dictionary.doc2bow(doc) for doc in df['tokenized']]
@@ -29,12 +29,11 @@ for filename in files:
                     alpha=1e-2, eta=0.5e-2, chunksize=chunksize, passes=5)
 
     # save the model
-    model_name = "models/"+filename+"_ldamodel.sav"
+    model_name = "models/"+filename+"_ldamodel"
     model.save(model_name)
-    
 
-    print("====")
-    print(filename)
+    print("\n====\n")
+    print(filename.upper())
 
     for topic_id in range(model.num_topics):
         topic = model.show_topic(topic_id, 10)
