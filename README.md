@@ -17,3 +17,40 @@ Do the users discuss the backward compatibility issues?
 
 ## Methodology
 
+### Libraries Studied
+
+The libraries studied are Tensorflow, Keras, Pytorch, Tessaract, Caffe, Theano, 
+and PySpark. These were chosen in reference to the paper [mlverse - find me]. In
+addition, PySpark was added because of it's comprehensive documentation in reference
+to deprecated libraries.
+
+### Data Collection
+
+#### Question Data Points
+
+The queries used are listed in `scripts/queries.sql`. All data collected at this
+stage can be found in the `data/unfiltered/source` directory in csv form.
+
+All questions and their answers pertaining to the libraries studied were collected,
+without any data filtering at this step.
+
+The query tool used is the [Stack Exchange Query Tool](https://data.stackexchange.com/stackoverflow/query/new)
+
+#### Deprecated APIs
+
+A manual investigation was done to find deprecated API's within a library. This
+collection was done primarily via the offical release notes on the appropriate
+library's github or official documentation and supported via searching online
+forums and blogs, notably stack overflow and github issues. These deprecations are
+outlined in `documentation/relevant_libraries.md`.
+
+### Data Filtering
+
+#### Deprecated Libraries
+
+Using the deprecated APIs found in the manual investigation, the questions were further
+filtered 
+
+#### Explicit Reference to Deprecation
+
+### Analysis

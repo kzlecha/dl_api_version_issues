@@ -9,7 +9,7 @@ All data collected at this stage can be found in the `data/unfiltered/source`
 directory in csv form.
 
 All questions were selected, both with and without answer. Furthermore, all answers
-were selected, not just the Accepted Answer/
+were selected, not just the Accepted Answer.
 
 The query tool used is the [Stack Exchange Query Tool](https://data.stackexchange.com/stackoverflow/query/new)
 
@@ -31,7 +31,8 @@ The script used to filter is `scripts/data_filtering/combine_questions.py`.
 A manual investigation was done to find deprecated API's within a library. This
 collection was done primarily via the offical release notes on the appropriate
 library's github or official documentation and supported via searching online
-forums and blogs, notably stack overflow and github issues.
+forums and blogs, notably stack overflow and github issues. These deprecations are
+outlined in `documentation/relevant_libraries.md`.
 
 Then the data was filtered by searching for references to any deprecated library
 in the body of the question or in the answer to the question. Then, to ensure that
