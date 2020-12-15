@@ -28,8 +28,8 @@ required packages via: `pip install -r requirements.txt`.
 ### Libraries Studied
 
 The libraries studied are Tensorflow, Keras, Pytorch, Tessaract, Caffe, Theano, 
-and PySpark. These were chosen in reference to the paper [mlverse - find me]. In
-addition, PySpark was added because of it's comprehensive documentation in reference
+and PySpark. These were chosen in reference to the paper [REF: The State of the ML-universe: 10 Years of Artificial Intelligence &
+Machine Learning Software Development on GitHub]. In addition, PySpark was added because of it's comprehensive documentation in reference
 to deprecated libraries.
 
 ### Data Collection
