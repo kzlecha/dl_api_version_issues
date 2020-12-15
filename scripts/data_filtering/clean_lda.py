@@ -22,8 +22,10 @@ def initial_clean(text):
     """
     clean the given string text
     """
-    # (\w+[-\.]\w+)+ matches text
+    # (\w+[-\.]\w+)+ matches text code
     text = sub("[^a-zA-Z ._*]", "", text).lower()
+    # remove anything with more than 2 underscores <- NOT PYTHON CODE
+    text = sub("___", "", text)
     text = word_tokenize(text)
     return text
 
