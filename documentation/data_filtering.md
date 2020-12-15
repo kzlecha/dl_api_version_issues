@@ -58,7 +58,7 @@ A separate filtering is done based on the study "An Empirical Study of Obsolete 
 Stack Overflow" by Haoxiang Zhang et. al. In this study, the following list of
 keywords were used to find obsolete answers as pointed out by commentors.
 
-The following keywords were used: `"deprecate", "deprecation", "out of date", "outdated", "obsolete"`.
+The keywords used: `"deprecate", "deprecation", "out of date", "outdated", "obsolete"`.
 
 To further narrow the results, only questions with answers were considered.
 
