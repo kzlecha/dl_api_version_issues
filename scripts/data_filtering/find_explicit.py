@@ -1,6 +1,3 @@
-from pandas import DataFrame, read_csv
-
-
 '''
 This filtering is based on the study "An Empirical Study of Obsolete Answers on
 Stack Overflow" by Haoxiang Zhang et. al. In this study, the following list of
@@ -10,6 +7,8 @@ We will use a similar approach in reference to RQ2: Do users discuss the API
 versioning for the selected frameworks explicitly?
 
 '''
+
+from pandas import DataFrame, read_csv
 
 
 def explicit_mention(df):
@@ -23,7 +22,7 @@ def explicit_mention(df):
         num_keywords: the split between reference found in question and answer
     ---
     Filter Used
-    Used tested filter from "An Empirical Study of Obsolete Answers on Stack Overflow
+    Used tested filter from "An Empirical Study of Obsolete Answers on Stack Overflow"
 
     Known false negatives:
         - nightly builds

@@ -18,5 +18,5 @@ for filename in files:
     
     sample = df.sample(n=n, replace=False)
     print('\nPop: %d, 95 conf: %d' % (pop, n))
-    filepath = "data/filtered/"+filename+"_sample.csv"
-    sample.to_csv(filepath)
+    filepath = "data/filtered/sample"+filename+"_sample.csv"
+    sample.to_csv(filepath, index=False)
