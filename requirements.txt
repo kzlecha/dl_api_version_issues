@@ -2,6 +2,7 @@ matplotlib
 numpy
 pandas
 scipy
+pickle
 
 gensim
 nltk
