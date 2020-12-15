@@ -2,4 +2,6 @@ matplotlib
 numpy
 pandas
 scipy
+
 gensim
+nltk
