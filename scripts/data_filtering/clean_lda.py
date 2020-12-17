@@ -27,11 +27,17 @@ def initial_clean(text):
     """
     # (\w+[-\.]\w+)+ matches text code
 
+    # remove less than and greater than
+    text = sub("lt", ">", text)
+    text = sub("gt", "<", text)
+
+    # Set to only ne
     text = sub("[^a-zA-Z ._]", "", text).lower()
 
     # remove anything with more than 2 underscores or dots <- NOT PYTHON CODE
     # text = sub("___", "", text)
     # text = sub("..", "", text)
+    
 
     # since the code is saved as 
     text = word_tokenize(text)
