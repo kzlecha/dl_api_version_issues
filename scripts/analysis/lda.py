@@ -16,7 +16,7 @@ files = ["deprecated_libraries", "explicit_mention"]
 
 for filename in files:
     # read in the data
-    filepath = "data/filtered/tokenized/"+filename+"_token.pkl" 
+    filepath = "data/filtered/tokenized/"+filename+"_lda.pkl" 
     df = read_pickle(filepath)
 
     num_topics = 20

@@ -1,15 +1,16 @@
 # Topics Found
 
-The following topics were found in the LDA analysis
+The following topics were found in the LDA analysis on the stack overflow questions
+and their respective answers, including the code.
+
+The pure result can be found in `documenation/lda_results/question_answers.md`.
 
 ## Deprecated APIs
 
 0. General model creation and training
     - save model epoch train activationrelu tf.keras.layers.dens callback verbos accuraci bin
-    - most are words used for 
 1. Training Hardware limitations
     - size use memori gpu quot next run alloc state action
-    - this uses the 
 2. Theano Error
     - line file ltmodulegt call theano recent error undefin except last
 3. Prediction
@@ -36,9 +37,9 @@ The following topics were found in the LDA analysis
     - loss y_pred function gradient valu calcul step optim model comput
 14.layers and weights
     - layer model weight network output dens input use fals train
-15.training and testing
+15. training and testing
     - y_train numpi x_test y_test dens x_train keras.lay tensorflow epoch activ
-16: 
+16: Training
     - loss .epoch val_loss accuraci msstep acc val_accuraci val_acc eta sstep
 17. unknown errors
     - use code relnofollow tri model ... get function work error
@@ -74,15 +75,15 @@ The following topics were found in the LDA analysis
     - use data code input tensorflow lcubla xlinker function mod.cu model
 12. Training
     - model use train step creat tensorflow deprec load run relnofollow
-13. 
+13. General Coding (Macros/Types)
     - note includ macro defin name file typedef endif type expand
 14. Metadata and code
     - run_metadata feed_dict fetch line option kwarg epoch fn result handl
-15. **Deprecation and Something**
+15. **Deprecation and Training**
     - unicod deprec use pleas name data core deprecation_wrapper.pi sequenc shape
-16. 
+16. Spark Reading Information and make files
     - info read bad red hat ... spark ld use make
-17. 
+17. *Errors and Warnings*
     - error member std int warn .... defin definit expect report
 18. **Future and Deprecations**
     - type futur deprec version numpi pass futurewarn understood synonym np.int

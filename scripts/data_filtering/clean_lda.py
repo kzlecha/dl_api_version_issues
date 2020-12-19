@@ -28,16 +28,15 @@ def initial_clean(text):
     # (\w+[-\.]\w+)+ matches text code
 
     # remove less than and greater than
-    text = sub("lt", ">", text)
-    text = sub("gt", "<", text)
+    text = sub("&lt", ">", text)
+    text = sub("&gt", "<", text)
 
-    # Set to only ne
+    # Set to only alphanumeric and exceptions
     text = sub("[^a-zA-Z ._]", "", text).lower()
 
     # remove anything with more than 2 underscores or dots <- NOT PYTHON CODE
     # text = sub("___", "", text)
     # text = sub("..", "", text)
-    
 
     # since the code is saved as 
     text = word_tokenize(text)
@@ -106,5 +105,5 @@ for filename in files:
     # keep only the top k
     df['tokenized'] = df['tokenized'].apply(keep_top_k_words)
 
-    df.to_pickle("data/filtered/tokenized/"+filename+"_token.pkl", protocol=4)
+    df.to_pickle("data/filtered/tokenized/"+filename+"_lda.pkl", protocol=4)
 
