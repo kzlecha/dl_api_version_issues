@@ -53,8 +53,9 @@ def wilcoxon_test(population_1, population_2):
 
 
 # Compare the two libraries - note population 2 is smallere
-df_1 = read_csv("data/unfiltered/all_questions.csv")
+# df_1 = read_csv("data/unfiltered/all_questions.csv")
 # df_2 = read_csv("data/filtered/deprecated_libraries.csv")
+df_1 = read_csv("data/filtered/deprecated_libraries.csv")
 df_2 = read_csv("data/filtered/explicit_mention.csv")
 
 # in order to compare, neither can be missing answers
@@ -62,8 +63,11 @@ df_1 = df_1.dropna(subset=['answer_id'])
 df_2 = df_2.dropna(subset=['answer_id'])
 
 
+df_1["quality"] = (df_1["question_score"] + df_1["answer_score"])/df_1["view_count"]
+df_2["quality"] = (df_2["question_score"] + df_2["answer_score"])/df_2["view_count"]
+
 # We will be assessing the following columns to access the quality of the answers
-quality_columns = ["question_score", "view_count", "answer_count", "question_comment_count", "answer_score", "answer_comment_count"]
+quality_columns = ["question_score", "view_count", "answer_count", "question_comment_count", "answer_score", "answer_comment_count", "quality"]
 
 
 # log-t-test comparision
