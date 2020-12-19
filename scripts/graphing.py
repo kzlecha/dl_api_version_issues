@@ -1,5 +1,7 @@
 from matplotlib import pyplot
 
+from datetime import datetime
+
 
 def hist_one(population, population_label, title, xlabel):
     '''
@@ -70,7 +72,7 @@ def scatter_one(x, y, title, xlabel, ylabel, label1):
     pyplot.show()
 
 
-def scatter_two(x, y, mask, title, xlabel, ylabel, label1, label2):
+def scatter_two(x, y, mask, title, file_name, xlabel, ylabel, label1, label2):
     '''
     Scatter two different populations
     ---
@@ -90,6 +92,10 @@ def scatter_two(x, y, mask, title, xlabel, ylabel, label1, label2):
     pyplot.title(title, fontsize=14, color='#2E282A')
     pyplot.xlabel(xlabel, fontsize=12, color='#2E282A')
     pyplot.ylabel(ylabel, fontsize=12, color='#2E282A')
-    pyplot.xlim(0)
     pyplot.legend()
+    if xlabel == "question_date" or xlabel == "answer_date":
+        pyplot.xlim(max([datetime(2008, 1, 1), x.min()]))
+    else:
+        pyplot.xlim(min([x.min(), 0]))
+    pyplot.savefig(file_name)
     pyplot.show()
