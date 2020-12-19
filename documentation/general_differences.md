@@ -8,6 +8,16 @@ Count:
     - Questions: 129802
     - Answers: 100707
 
+Means:
+    - Question
+        - question_score : 0.7884306
+        - view_count : 438.5951
+        - answer_count : 0.9657204
+        - question_comment_count : 1.510980
+    - Answer
+        - answer_score              0.9453507
+        - answer_comment_count      1.615008
+
 
 ### Questions About an API post deprecation
 
