@@ -2,6 +2,9 @@ matplotlib
 numpy
 pandas
 scipy
+sklearn
+joblib
 
 gensim
 nltk
+
