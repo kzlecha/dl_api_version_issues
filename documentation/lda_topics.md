@@ -8,21 +8,20 @@ These were filtered to include the code
 Deprecatated APIs:
     - most topics are about specifics of training
     - some reference to hardware
-    - reference to versioning and installation (theano)
+    - reference to versioning and batches
 Explicit Reference
     - More questions explicitly about versioning
         - unsupported versions
-        - deprecation as it relates to training
-        - theano and it's libraries
-        - installation and undefined
+        - deprecated models
         - Future and Deprecation
     - Lots of reference to training
         - layers
         - accuracy
-    - One error and warning
+        - cost
+    - Discussion of Builds
+    - Error
     - Hardware
-    - Handling None/NaN
-    - File Systems and Namespaces
+    - Shell commands
     - Environments
 
 ## Conclusions
