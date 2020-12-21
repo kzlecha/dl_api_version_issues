@@ -11,81 +11,81 @@ The pure result can be found in `documenation/lda_results/question_answers.md`.
     - save model epoch train activationrelu tf.keras.layers.dens callback verbos accuraci bin
 1. Training Hardware limitations
     - size use memori gpu quot next run alloc state action
-2. Theano Error
-    - line file ltmodulegt call theano recent error undefin except last
+2. Training with Layer Weights
+    - layer model weight gradient input output alpha axi loss train
 3. Prediction
-    - data train predict use label dataset model test set number
-4. Image Training / CNNs
-    - imag img target_s batch_siz directori class train use height file
-5. Input Shapes
-    - input shape output tensor layer axi __init__self model call kwarg
-6. Statistics
-    - gener dim precis discrimin nois real replic epoch fake np.random.uniform
-7. Training
-    - nan kernel_s activationrelu paddingsam stride model.adddens sigma model.adddropout bla model.addconvd
-8. Unknowns and customs
-    - unknown count obj custom_object segment x.shape pwhile itertool _concatenate_ list
-9. **Versions and Installations**
-    - .. instal version theano librari python open devic tensorflow gpu
-10. LSTM and shapes
-    - none shape param input output dens dimens lstm type expect
-11. text processing
-    - name embed word text token batch_siz commun vector list output_dim
-12. batches and grouping
-    - true index self.batch_s gener batch_siz batch_x data group batch __getitem__self
-13. loss calcuations and steps
-    - loss y_pred function gradient valu calcul step optim model comput
-14.layers and weights
-    - layer model weight network output dens input use fals train
-15. training and testing
-    - y_train numpi x_test y_test dens x_train keras.lay tensorflow epoch activ
-16: Training
-    - loss .epoch val_loss accuraci msstep acc val_accuraci val_acc eta sstep
-17. unknown errors
-    - use code relnofollow tri model ... get function work error
-18. Convolution
-    - convd .e pad conv activ relu stride ... lttf.tensor filter
-19. Generic Coding
-    - kwarg arg refer kwd call except epoch none pylint traceback
+    - data predict batch label use valu train sampl one time
+4. Training
+    - imodel batch_siz epoch save train verbos load true dataset fals
+5. Tensorflow Error
+    - use code function relnofollow tri run work error tensorflow follow
+6. LSTM
+    - input layer shape output model lstm dens batch_siz dimens featur
+7. Epochs
+    - sample_weight epoch worker steps_per_epoch class_weight validation_step batch_siz shuffl callback verbos
+8. Environment Error
+    - instal theano .... python version modul anaconda conda environ cudnn
+9. **Versions and Batch**
+    - .. ... refer version batch_x modul idx progress batch_i download
+10. Convolution
+    - none param type dens convd trainabl total shape nontrain _dense_
+11. Theano Node Error
+    - line file modul call error recent except theano last node
+12. Training options
+    - tate size use beta action next lr step bin score
+13. Training and Test and validation
+    - y_train y_test x_train x_test model.fitx_train test validation_datax_test data likelihood img_col
+14. CNN Kernels
+    - convd stride kernel_s activationrelu paddingsam conv activ pad relu kernel_initi
+15. Shape
+    - shape .e array model activationrelu error expect ... input got
+16: Hardware
+    - undefin gpu librari devic open success dynam tensorflowstream_executorplatformdefaultdso_loader.cc memori cpu
+17. NLP
+    - word kwd none token sentenc graph_funct text y_pred output input
+18. Accuracy
+    - model train use epoch loss accuraci relnofollow tri learn result
+19. General ML
+    - numpi keras.lay keras.model tensorflow dens npimport sequentialfrom tensorflow.keras.lay matplotlib.pyplot pandas
 
 ## Explicit Reference
-0. Layers of a CNN
-    - layer conv net.cpp top pool relu name type stride convolut
-1. *?? idk*
-    - line file module call recent last run kwarg except node
-2. hardware
-    - use devic tensorflow tensorflowcorecommon_runtimegpugpu_device.cc chunk memori librari bin size gpu
-3. Shell Commands
-    - unsuccess find constructor object echo name shell class_modecategor rm build_dir
-4. **Support and Versions** 
-    - ... .e python convert oper prob unsupport usrbinld output op
-5. **Deprecation and Training**
-    - loss md inconsist accuraci .epoch val_loss target train msstep deprec
-6. None and NaN
-    - none dt_int nan kwarg op layer input regist date function
-7. **Theano and Libraries**
-    - build compil theano.sandbox.cuda found test info look dndebug applic librari
-8. File System and Namespaces
-    - file namespac line match found directori unknown python fail make_thunk
-9. hardware and Compiling
-    - gpu cuda comput nvcc xcompil const cmd devic cuda_ndarray.cu compil
-10. **Installation and Undefined**
-    - .. refer copi undefin instal function line uninstal numpi alreadi
-11. training
-    - use data code input tensorflow lcubla xlinker function mod.cu model
-12. Training
-    - model use train step creat tensorflow deprec load run relnofollow
-13. General Coding (Macros/Types)
-    - note includ macro defin name file typedef endif type expand
-14. Metadata and code
-    - run_metadata feed_dict fetch line option kwarg epoch fn result handl
-15. **Deprecation and Training**
-    - unicod deprec use pleas name data core deprecation_wrapper.pi sequenc shape
-16. Spark Reading Information and make files
-    - info read bad red hat ... spark ld use make
-17. *Errors and Warnings*
-    - error member std int warn .... defin definit expect report
-18. **Future and Deprecations**
-    - type futur deprec version numpi pass futurewarn understood synonym np.int
-19. Environment
-    - file .. error visual instal studio python ltmodulegt theano compil
+0. Files
+    - file visual use cprogram code error run contain tri save
+1. **Deprecated Training**
+    - use model tensorflow train relnofollow deprec input imag code step
+2. Tensorflow Training
+    - object insert train_i output_node_nam event output_nam session obviou falsetensorflow.python.keras.layers.normalization.batchnorm falsetensorflow.python.keras.layers.core.activ
+3. Hardware
+    - gpu devic cuda comput std .. visual nvcc librari tensorflowcorecommon_runtimegpugpu_device.cc
+4. coding 
+    - int expect op function switch layer regist doubl custom void
+5. **Tensorflow Deprecation**
+    - tensorflow argument .. use modul np.float deprec model tensorboard rc
+6. Shell
+    - note macro includ name typedef initi file packag os expand
+7. Training
+    - chunk use bin alloc tensorflowcorecommon_runtimebfc_allocator.cc size total clientrequest recompil memori
+8. Environment Error
+    - error studio file .. warn instal member namespac compil ....
+9. code
+    - date els none input except name uninstal numpi new_funcarg rais
+10. Results
+    - line file run_metadata feed_dict option fetch handl placehold result fetch_list
+11. **Future and Deprecations**
+    - type info version deprec numpi futur pass understood futurewarn synonym
+12. Theano Installation
+    - .. modul file python line theano instal lazylinker_extmod.cpp compil error
+13. Build
+    - found oper match test round look build compil find fail
+14. Checkpoint
+    - ... .e python true step iou maxdet checkpoint area fine
+15. **Deprecation and Future**
+    - deprec version.instruct remov futur net.cpp constructor layer updatingus top use
+16. Error
+    - file line modul call last recent run defin error except
+17. Training
+    - loss layer none shape input name model output use .epocht
+18. Training Cost
+    - target cost mask axi dimens link homekdownloadsopencv layer input_tensor input
+19. DataTypes
+    - dt_int train imag dst cell tidx none tf.placeholdertf.float sess tf.float

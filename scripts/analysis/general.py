@@ -1,12 +1,12 @@
 from pandas import read_csv
 
 
-# df_all = read_csv("data/unfiltered/all_questions.csv")
+df_all = read_csv("data/unfiltered/all_questions.csv")
 
-# print("All Questions")
-# print(df_all.count())
-# print(df_all.mean())
-# print(df_all.std())
+print("All Questions")
+print(df_all.count())
+print(df_all.mean())
+print(df_all.std())
 
 # df_all = None
 
@@ -14,16 +14,16 @@ df_libraries = read_csv("data/filtered/deprecated_libraries.csv")
 df_keywords = read_csv("data/filtered/explicit_mention.csv")
 
 
-# print("/nDeprecated Libraries")
-# print(df_libraries.count())
-# print(df_libraries.mean())
-# print(df_libraries.std())
+print("/nDeprecated Libraries")
+print(df_libraries.count())
+print(df_libraries.mean())
+print(df_libraries.std())
 
 
-# print("/nExplicit Mention")
-# print(df_keywords.count())
-# print(df_keywords.mean())
-# print(df_keywords.std())
+print("/nExplicit Mention")
+print(df_keywords.count())
+print(df_keywords.mean())
+print(df_keywords.std())
 
 
 # split of the libraries
@@ -35,10 +35,10 @@ for i in df_libraries.index:
         # check for questions
         if library in row["tags"].lower():
             libraries[library] += 1
-        # elif library in row["question_body"].lower():
-        #     libraries[library] += 1
-        # elif type(row["answer_body"]) == "string" and row["answer_body"] is not None and library in row["answer_body"].lower():
-        #     libraries[library] += 1
+        elif library in row["question_body"].lower():
+            libraries[library] += 1
+        elif type(row["answer_body"]) == "string" and row["answer_body"] is not None and library in row["answer_body"].lower():
+            libraries[library] += 1
 print(libraries)
 
 for library in libraries.keys():
@@ -54,10 +54,10 @@ for i in df_keywords.index:
     for library in libraries.keys():
         if library in row["tags"].lower():
             libraries[library] += 1
-        # elif library in row["question_body"].lower():
-        #     libraries[library] += 1
-        # elif type(row["answer_body"]) == "string" and row["answer_body"] is not None and library in row["answer_body"].lower():
-        #     libraries[library] += 1
+        elif library in row["question_body"].lower():
+            libraries[library] += 1
+        elif type(row["answer_body"]) == "string" and row["answer_body"] is not None and library in row["answer_body"].lower():
+            libraries[library] += 1
 print(libraries)
 
 for library in libraries.keys():

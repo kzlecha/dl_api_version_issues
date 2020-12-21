@@ -33,7 +33,7 @@ def main():
             title = quality_column+" vs "+time_column
 
             try:
-                scatter_two(df[time_column], df[quality_column], mask, title, filename, time_column, quality_column, "explicit", "not explicit")
+                scatter_two(df[time_column], df[quality_column], mask, title, filename, time_column, quality_column, "Explicit Deprecation", "Deprecated API")
             except TypeError:
                 continue
 
