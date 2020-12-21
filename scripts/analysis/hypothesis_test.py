@@ -36,8 +36,7 @@ def log_t_test(population_1, population_2):
 
 def wilcoxon_test(population_1, population_2):
     '''
-    Conduct an wilcoxon test on the two populations against the alternative
-    hypothesis that population_1 > population_2
+    Conduct an wilcoxon test on the two populations
     ---
     Inputs
         @param popualtion_1: an array
@@ -48,15 +47,15 @@ def wilcoxon_test(population_1, population_2):
     ---
         p = man_whitney(data["a"], data["b"])
     '''
-    statistic, pvalue = wilcoxon(population_1, population_2, alternative="greater", correction=True)
+    statistic, pvalue = wilcoxon(population_1, population_2, correction=True)
     return pvalue
 
 
 # Compare the two libraries - note population 2 is smallere
-# df_1 = read_csv("data/unfiltered/all_questions.csv")
-# df_2 = read_csv("data/filtered/deprecated_libraries.csv")
-df_1 = read_csv("data/filtered/deprecated_libraries.csv")
-df_2 = read_csv("data/filtered/explicit_mention.csv")
+df_1 = read_csv("data/unfiltered/all_questions.csv")
+df_2 = read_csv("data/filtered/deprecated_libraries.csv")
+# df_1 = read_csv("data/filtered/deprecated_libraries.csv")
+# df_2 = read_csv("data/filtered/explicit_mention.csv")
 
 # in order to compare, neither can be missing answers
 df_1 = df_1.dropna(subset=['answer_id'])

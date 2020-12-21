@@ -42,12 +42,15 @@ for i in df_explicit.index:
 
 df_explicit["framework"] = framework_list
 
+df_deprecated_lib["quality"] = (df_deprecated_lib["question_score"] + df_deprecated_lib["answer_score"])/df_deprecated_lib["view_count"]
+df_explicit["quality"] = (df_explicit["question_score"] + df_explicit["answer_score"])/df_explicit["view_count"]
+
 
 print("Deprecated API:")
-print(df_deprecated_lib.groupby(["framework"]).mean())
+print(df_deprecated_lib.groupby(["framework"])["quality"].mean())
 print(df_deprecated_lib.groupby(["framework"]).count().max(axis=1))
 
 print("\nExplicit Reference:")
-print(df_explicit.groupby(["framework"]).mean())
+print(df_explicit.groupby(["framework"])["quality"].mean())
 print(df_explicit.groupby(["framework"]).count().max(axis=1))
 

@@ -21,7 +21,7 @@ colors = ["#ef476f", "#ffd166", "#06d6a0", "#118ab2", "#073b4c", "#7B415E"]
 
 
 
-def plot_quality_dist(df, filename):
+def plot_quality_dist(df, desc, filename):
     pyplot.figure(figsize=(14,7), dpi=150)
     pyplot.grid(color="#2E282A", alpha=0.5)
 
@@ -31,7 +31,7 @@ def plot_quality_dist(df, filename):
         pyplot.scatter(df["temp"].loc[mask], df["quality"].loc[mask], alpha=0.75, color=colors[i%6], label=str(i))
     df = df.drop(["temp"], axis=1)
 
-    pyplot.title("Quality Across Topics", fontsize=14, color='#2E282A')
+    pyplot.title("Quality Across Topics" + desc, fontsize=14, color='#2E282A')
     pyplot.xlabel('Topic ID', fontsize=12, color='#2E282A')
     pyplot.ylabel("Calculated Quality", fontsize=12, color='#2E282A')
     pyplot.xlim(0, 20)
@@ -79,11 +79,14 @@ for filename in files:
 
     df["main_topic"].to_csv("data/filtered/lda_topic_label/"+filename+".csv", index=False)
 
-    plot_quality_dist(df, filename)
+    if filename == "deprecated_libraries":
+        plot_quality_dist(df, "in Questions with a Deprecated API", filename)
+    else:
+        plot_quality_dist(df, "in Questions Explicitly Referencing Deprecation", filename)
 
     print("\n", filename)
     print(df.corr())
 
     print(df.groupby(["main_topic"])["quality"].mean())
 
-    
+    i += 1

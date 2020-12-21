@@ -17,6 +17,7 @@ Means:
     - Answer
         - answer_score              0.9453507
         - answer_comment_count      1.615008
+    - Quality: 0.0067776413681629325
 
 
 ### Questions About an API post deprecation
@@ -34,6 +35,7 @@ Means:
     - Answer:
         - answer_score: 0.8524260
         - answer_comment_count: 1.454600
+    - Quality: 0.012572307914190606
 
 Standard Deviation:
     - Question:
@@ -64,6 +66,7 @@ Means:
     - Answer:
         - answer_score: 1.650492
         - answer_comment_count: 1.057049
+    - Quality: 0.004155915505572968
 
 Standard Deviation:
     - Question:

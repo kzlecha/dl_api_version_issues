@@ -52,9 +52,10 @@ def main():
     topics = []
     topic_labels = read_csv('data/filtered/lda_topic_label/deprecated_libraries.csv')
     topics.extend(topic_labels.values)
-    topic_labels = read_csv('data/filtered/lda_topic_label/explicit_mention.csv')
+    topic_labels = read_csv('data/filtered/lda_topic_label/explicit_mention.csv') + 20
     topics.extend(topic_labels.values)
     df["topics"] = topics
+    print(df["topics"])
 
     # features = ['question_score', "view_count", "answer_count", "answer_score", "question_comment_count", "answer_comment_count", "is_explicit", "topics"]
     features = ['question_score', "answer_count", "answer_score", "question_comment_count", "answer_comment_count", "is_explicit", "topics"]
