@@ -3,6 +3,8 @@
 This is a repository for research on how deprecation of Deep Learning libraries 
 and APIs affects the quality of answers given on Stack Overflow.
 
+The finds of this research is in [overview.md](https://github.com/kzlecha/dl_api_version_issues/blob/main/overview.md)
+
 ## Research Questions
 
 1. What is the deprecation status of the deep learning libraries in our study?
