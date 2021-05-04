@@ -28,7 +28,7 @@ required packages via: `pip install -r requirements.txt`.
 
 * `scripts/` contains the scripts used to run the analysis. Scripts are organized by use case in directories
 * `documentation/` contains the results of the analysis as of December 23, 2020.
-* `models` contains the lda, random forest, and linear regression models
-* `plots` contains any generated graphs
+* `models/` contains the lda, random forest, and linear regression models
+* `plots/` contains any generated graphs
 
 The datasets are not included in this repository.
