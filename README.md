@@ -72,3 +72,27 @@ The keywords used: `"deprecate", "deprecation", "out of date", "outdated", "obso
 Furthermore, only questions with answers were considered.
 
 ### Analysis
+
+#### Metric for Quality
+In contrast to quality, creating a metric for the discussion of deprecation is more clear. We define two metrics for the discussion of deprecation:
+1. an explicit mention of the root \textit{deprecate}
+2. the main topic of the question is deprecation
+
+The keywords used to determine an explicit mention of the root *deprecate* are outlined in the methodology. However, since not all questions that have these keywords will be explicitly about deprecation, it must be supplemented. We apply LDA Topic Modeling to assess if the overall topic discussed in the question and answer is deprecation. This filter excludes any secondary topics discussed.
+
+#### Determining the Issues Discussed
+
+This analysis used Latent Dirichlet allocation (LDA) to determine the primary topics discussed after an API has been deprecated. This served two purposes. First, this helps provide evidence for or against assumptions made about the topics of discussion on Stack Overflow. Second, while a question might mention deprecation, it is not necessarily primarily about deprecation. By extracting the topics of discussion, we are better able to represent the core component of a question and answer.
+
+This was supplemented by a human evaluation of the questions with a 95% confidence sample.
+
+#### Hypothesis Testing
+
+We conduct two-sided hypothesis tests on the quality of a population of questions about deprecation and the quality of a population of questions that are not about deprecation. However, since the data is heavy tailed, it does not abide by the assumptions of a T-Test.
+
+Three tests were used: a T test on 95% of the data, a log t-test, and a Wilcoxon Sign Rank Test.
+
+#### Regression Model
+
+A random forest regression model was used to extract the feature importance in predicting the quality of the 
+
