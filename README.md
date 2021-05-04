@@ -3,7 +3,7 @@
 This is a repository for research on how deprecation of Deep Learning libraries 
 and APIs affects the quality of answers given on Stack Overflow.
 
-The finds of this research is in [overview.md](https://github.com/kzlecha/dl_api_version_issues/blob/main/overview.md)
+The finds of this research is in [overview.md](https://github.com/kzlecha/dl_api_version_issues/blob/main/overview.md).
 
 ## Research Questions
 
@@ -26,9 +26,9 @@ required packages via: `pip install -r requirements.txt`.
 
 ## Directory Structure
 
-* **`scripts`** contains the scripts used to run the analysis. Scripts are organized by use case in directories
-* **`documentation`** contains the results of the analysis as of December 23, 2020.
-* **`models`** contains the lda, random forest, and linear regression models
-* **`plots`** contains any generated graphs
+* `scripts/` contains the scripts used to run the analysis. Scripts are organized by use case in directories
+* `documentation/` contains the results of the analysis as of December 23, 2020.
+* `models` contains the lda, random forest, and linear regression models
+* `plots` contains any generated graphs
 
 The datasets are not included in this repository.
