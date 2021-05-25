@@ -1,4 +1,4 @@
-# dl_api_version_issues
+# The Effects of Deprecation on Deep Learning Questions and Answers on Stack Overflow
 
 This is a repository for research on how deprecation of Deep Learning libraries 
 and APIs affects the quality of answers given on Stack Overflow.
